@@ -1,0 +1,27 @@
+// В этом файле должны быть стили для БЭМ-блока main-content, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-content{
+	display:flex;
+	width: 100%;
+}
+
+@media(max-width:800px){
+	.main-content {
+	    width: 100%;
+    	flex-direction: column;
+    }
+
+    .item-gallery, .item-about {
+	    justify-content: center;
+    	width: 100%;
+	}
+
+	.item-about {
+    	margin-left: 0;
+    }
+}
+
+@import './item-img-gallery/item-img-gallery.scss';
+@import './item-about/item-about.scss';

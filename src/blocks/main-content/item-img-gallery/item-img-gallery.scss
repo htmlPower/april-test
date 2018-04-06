@@ -1,0 +1,94 @@
+// В этом файле должны быть стили для БЭМ-блока item-gallery, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.item-gallery{
+	width: 50%;
+	display: flex;
+}
+
+.item-gallery__element--sm{
+	width: 82px;
+	height: 82px;
+	margin-bottom: 10px;
+	border: 2px solid #ededed;
+	position: relative;
+}
+
+.item-gallery__element--sm:hover{
+	cursor: pointer;
+}
+
+.item-gallery__element--sm.active{
+	border: 2px solid #ffec00;
+}
+
+.item-gallery__element--sm.active:before {
+    content: "";
+    border-top: 10px solid transparent;
+    border-left: 9px solid #ffffff;
+    border-bottom: 10px solid transparent;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    right: -6px;
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    margin: auto;
+}
+
+.item-gallery__element--sm.active:after {
+    content: "";
+    border-top: 10px solid transparent;
+    border-left: 9px solid #ffec00;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -9px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    margin: auto;
+}
+
+.item-gallery__element--hidden:after{
+	content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 0.5;
+    z-index: 5;
+}
+
+.gallery-img-lg{
+	margin-left: 20px;
+}
+
+.item-gallery__element--bg{
+	border: 3px solid #ededed;
+	position: relative;
+}
+
+.gallery__loupe{
+	position: absolute;
+	right: 15px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ededed;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.item-gallery__element--bg .item-gallery-img {
+	width: 100%;
+	height: auto;
+}

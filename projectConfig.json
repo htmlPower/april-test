@@ -1,0 +1,48 @@
+{
+  "blocks": {
+    "header": [],
+    "breadcrumbs": [],
+    "item-title-img": [],
+    "main-content": []
+
+  },
+  "addCssBefore": [
+    "./src/scss/functions.scss",
+    "./src/scss/variables.scss",
+    "./src/scss/main.scss",
+    "./src/scss/mixins.scss",
+    "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
+    "../../node_modules/nouislider/distribute/nouislider.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  ],
+  "addCssAfter": [
+    "./src/scss/print.scss"
+  ],
+  "singleCompiled": [
+    "./src/scss/blocks-library.scss"
+  ],
+  "addJsBefore": [
+    "./node_modules/jquery/dist/jquery.min.js",
+    "./node_modules/jquery-migrate/dist/jquery-migrate.min.js",
+    "./node_modules/svg4everybody/dist/svg4everybody.js",
+    "./node_modules/ismobilejs/isMobile.min.js",
+    "./node_modules/owl.carousel/dist/owl.carousel.js",
+    "./node_modules/swipejs/build/swipe.min.js",
+    "./node_modules/nouislider/distribute/nouislider.js",
+    "./node_modules/object-fit-images/dist/ofi.js",
+    "./node_modules/baron/baron.min.js"
+  ],
+  "addJsAfter": [
+    "./src/js/global-script.js"
+  ],
+  "addImages": [
+    "./src/img/*.{jpg,jpeg,gif,png,svg,ico}"
+  ],
+  "copiedCss": [],
+  "copiedJs": [],
+  "dirs": {
+    "srcPath": "./src/",
+    "buildPath": "./build/",
+    "blocksDirName": "blocks"
+  }
+}

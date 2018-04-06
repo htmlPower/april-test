@@ -1,0 +1,38 @@
+/// Общие стили по проекту
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+.page__inner{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1{
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+input{
+	outline: none;
+}
+
+@media(max-width:1210px){
+	.container{
+		padding: 0 15px;
+	}
+}

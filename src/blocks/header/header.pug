@@ -1,0 +1,227 @@
+header.header
+	.header__top
+		.container
+			.header__top-nav
+				.nav-toggle
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				nav.header__nav
+					ul.header__nav-list#menu
+						li.header__nav-item.nav-item--active
+							a.nav-item-link Главная
+						span.fixed-tabs
+						li.header__nav-item
+							a.nav-item-link О компании
+						li.header__nav-item
+							a.nav-item-link Оплата
+						li.header__nav-item
+							a.nav-item-link Доставка
+						li.header__nav-item
+							a.nav-item-link Гарантия
+						li.header__nav-item
+							a.nav-item-link Акции %
+						li.header__nav-item
+							a.nav-item-link Контакты
+				.header__entry
+					.registration
+						a.entry__link Регистрация
+					.login
+						a.entry__link Войти
+section
+	.container
+		.header__main
+			.header__logo
+				a.header__logo-link
+					img(src="./img/header__logo.png" class="logo-link-img")
+					span.logo-link-text Официальный дистрибьютор в Крыму с 2005 года
+			.headerr__right-block
+				.header__adress
+					.header__adress-img
+						img(src="./img/header__adress.png")
+					.header__adress-text
+						span Ближайший магазин
+						strong Симферополь
+						span ул.Маяковского 14-Э
+				.header__time
+					.header__time-img
+						img(src="./img/header__time.png")
+					.header__time-text
+						span Пн.-Пт.:
+						strong 09:00-18:00
+						span Выходные:
+						span Сб.-Вс.
+				.header__tel
+					.header__tel-img
+						img(src="./img/header__tel.png")
+					.header__tel-text
+						span +7(978)
+							strong  729-02-15
+						span (3652)
+							strong  24-82-31
+						.header__tel__back-call
+							.back-call__btn
+								span Обратный звонок
+section.main-nav
+	.container.main-nav__inside
+		.tabs-place
+			.main-nav__catalog
+				span(class="main-nav__catalog-btn" id="show-tabs-item") Каталог
+				div(class="nav-tabs" id="tabs-item" style="display:none")
+					a(href="#home" class="tabs-link tablinks active") Home & Garden / Бытовая техника
+					a(href="#prof" class="tabs-link tablinks") Professional / Профессиональная техника
+					.tabs-content__home.tabcontent.active#home
+						.tabs-content--white-bg
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item1.jpg")
+									.tabs-item__text
+										span Аппараты высокого давления
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item2.jpg")
+									.tabs-item__text
+										span Пылесосы
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item3.jpg")
+									.tabs-item__text
+										span Системы полива и орошения
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item4.jpg")
+									.tabs-item__text
+										span Ручные подметальные машины
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item5.jpg")
+									.tabs-item__text
+										span Насосы
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item6.jpg")
+									.tabs-item__text
+										span Электровеники
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item7.jpg")
+									.tabs-item__text
+										span Пароочистители
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item8.jpg")
+									.tabs-item__text
+										span Гладильные системы
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item9.jpg")
+									.tabs-item__text
+										span Паропылесосы
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item10.jpg")
+									.tabs-item__text
+										span Стеклоочиститель
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item11.jpg")
+									.tabs-item__text
+										span Полотер
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item12.jpg")
+									.tabs-item__text
+										span Поломоечная машина
+						.tabs-content--gray-bg
+							.tabs-content__item.tabs-content__item--sm
+								a.tabs-content-link
+									.tabs-item__img.tabs-item__img--sm
+										img(src="./img/tabs-item-sm1.jpg")
+									.tabs-item__text
+										span Принадлежности
+							.tabs-content__item.tabs-content__item--sm
+								a.tabs-content-link
+									.tabs-item__img.tabs-item__img--sm
+										img(src="./img/tabs-item-sm2.jpg")
+									.tabs-item__text
+										span Для чистки и ухода
+					.tabs-content__prof.tabcontent#prof
+						.tabs-content--white-bg
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item7.jpg")
+									.tabs-item__text
+										span Пароочистители
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item8.jpg")
+									.tabs-item__text
+										span Гладильные системы
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item9.jpg")
+									.tabs-item__text
+										span Паропылесосы
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item10.jpg")
+									.tabs-item__text
+										span Стеклоочиститель
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item11.jpg")
+									.tabs-item__text
+										span Полотер
+							.tabs-content__item
+								a.tabs-content-link
+									.tabs-item__img
+										img(src="./img/tabs-item12.jpg")
+									.tabs-item__text
+										span Поломоечная машина
+						.tabs-content--gray-bg
+							.tabs-content__item.tabs-content__item--sm
+								a.tabs-content-link
+									.tabs-item__img.tabs-item__img--sm
+										img(src="./img/tabs-item-sm1.jpg")
+									.tabs-item__text
+										span Принадлежности
+							.tabs-content__item.tabs-content__item--sm
+								a.tabs-content-link
+									.tabs-item__img.tabs-item__img--sm
+										img(src="./img/tabs-item-sm2.jpg")
+									.tabs-item__text
+										span Для чистки и ухода2		
+		.main-nav__search
+			form
+				input(type="text" class="search-input" placeholder="Что ищем?")
+				.search-btn
+					<i class="fa fa-search"></i>
+		.cart-place
+			.main-nav__cart-block
+				.cart-block__favs
+					<i class="fa fa-heart-o"></i>
+					span.cart-block__icon 0
+				.cart-block__compare
+					<i class="fa fa-files-o"></i>
+					span.cart-block__icon 0
+				.cart-block__basket
+					<i class="fa fa-shopping-basket"></i>
+					span.cart-block__icon 2
+					.cart-block__basket-text
+						span На сумму - 23 140 руб.
+#shadow

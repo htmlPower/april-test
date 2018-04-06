@@ -1,0 +1,22 @@
+// В этом файле должны быть стили для БЭМ-блока breadcrumbs, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.breadcrumbs{
+	margin: 22px 0;
+}
+
+.breadcrumbs-link{
+	color: #6e6e6e;
+	font-size: 12px;
+}
+
+.breadcrumbs-link--active{
+	color: #cccccc;
+}
+
+.breadcrumbs-divider{
+	margin: 0px 6px;
+	color: #6e6e6e;
+    font-size: 12px;
+}
