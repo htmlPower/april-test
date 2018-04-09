@@ -12,24 +12,28 @@
 			div.badge.badge--yellow
 				span Хит
 	.item-about__rate
-		.item__stars
-			input(id="item__stars4" type="radio" name="item__stars-element")
-			label(for="item__stars4" )
-			input(id="item__stars3" type="radio" name="item__stars-element")
-			label(for="item__stars3" )
-			input(id="item__stars2" type="radio" name="item__stars-element")
-			label(for="item__stars2" )
-			input(id="item__stars1" type="radio" name="item__stars-element")
-			label(for="item__stars1" )
-			input(id="item__stars" type="radio" name="item__stars-element")
-			label(for="item__stars" )
+		.item__stars__block
+			.item__stars
+				input(id="item__stars4" type="radio" name="item__stars-element")
+				label(for="item__stars4" )
+				input(id="item__stars3" type="radio" name="item__stars-element")
+				label(for="item__stars3" )
+				input(id="item__stars2" type="radio" name="item__stars-element")
+				label(for="item__stars2" )
+				input(id="item__stars1" type="radio" name="item__stars-element")
+				label(for="item__stars1" )
+				input(id="item__stars" type="radio" name="item__stars-element")
+				label(for="item__stars" )
+			.item__stars-qnt
+				span (123)
 		.item__review
 			<i class="fa fa-commenting-o" aria-hidden="true"></i>
 			span Оставить отзыв
 	.item-choose
 		.item-choose__cart
 			.item-choose-price
-				span 21 190 руб.
+				span.price-number 21 190 
+				span.price-cuurency руб.
 			.to-cart-btn
 				<i class="fa fa-shopping-basket"></i>
 		.item-choose__cart-right
@@ -46,5 +50,5 @@
 	.item-info
 		p Подробные <a href="javascript:;">условия доставки</a> и <a href="javascript:;">оплаты</a>.
 		p <a href="javascript:;">Гарантия на бытовую технику 5 лет!</a>
-		p Качественная чистка полов, ковровых покрытий и мягкой мебели. Благодаря  дополнительному фильтру  HEPA 13 очищается воздух в помещении от мелких частиц пыли, спор и пыльцы, вызывающих аллергию, а система Perma Power увлажняет его. Легкий, удобный в эксплуатации. Рекомендован для использования в медицинских учреждениях.
+		p.item-info-description Качественная чистка полов, ковровых покрытий и мягкой мебели. Благодаря  дополнительному фильтру  HEPA 13 очищается воздух в помещении от мелких частиц пыли, спор и пыльцы, вызывающих аллергию, а система Perma Power увлажняет его. Легкий, удобный в эксплуатации. Рекомендован для использования в медицинских учреждениях.
 		p <strong>Артикул:</strong> 1.195-202.0

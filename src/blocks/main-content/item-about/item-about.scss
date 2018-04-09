@@ -3,8 +3,7 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .item-about{
-	margin-left: 25px;
-	width: 50%;
+	width: 48%;
 }
 
 .item-about__header{
@@ -25,16 +24,18 @@
 
 .item-about__title{
 	font-size: 18px;
-	margin: 15px 0 30px;
+	margin: 10px 0 25px;
+    text-transform: uppercase;
+    letter-spacing: -1.8px;
 }
 
 .item-about__badge{
 	position: absolute;
-	top: 0;
-    right: 0;
+	top: -1px;
+    right: -1px;
 	display: flex;
     justify-content: space-between;
-    width: 95px;
+    width: 93px;
 }
 
 .badge{
@@ -61,8 +62,19 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 70px;
+	height: 82px;
 	border-bottom: 2px solid #ededed;
+}
+
+.item__stars__block{
+	display: flex;
+	align-items: center;
+}
+
+.item__stars-qnt{
+	margin-left: 8px;
+    color: #cccccc;
+    font-size: 14px;
 }
 
 .item__stars input:checked ~ label,
@@ -100,7 +112,7 @@
 	width: 18px;
 	float: right;
 	cursor: pointer;
-	margin-right: 10px;
+	margin-right: 3px;
 	position: relative;
 	z-index: 1;
 }
@@ -136,19 +148,20 @@
 }
 
 .item__review i{
-	margin-right: 5px;
+	margin-right: 10px;
+    margin-top: -5px;
 	font-size: 20px;
 }
 
 .item__review span{
-	border-bottom: 1px dashed #000;
+	border-bottom: 1px dotted #000;
 }
 
 .item-choose{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 105px;
+	height: 102px;
 }
 
 .item-choose__cart{
@@ -169,12 +182,12 @@
 
 .to-cart-btn{
 	position: absolute;
-	width: 65px;
+	width: 63px;
 	height: 45px;
 	font-size: 20px;
 	background: #ffec00;
 	top: 0;
-    right: 0;
+    right: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,12 +210,21 @@
     margin: auto;
 }
 
+.price-cuurency{
+	font-size: 17px;
+	margin-right: 4px;
+}
+
+.price-number{
+	margin-right: 5px;
+}
+
 .item-choose__cart-right{
    	display: flex;
 }
 
 .item-choose__favs{
-    margin-right: 15px;
+    margin-right: 24px;
 }
 
 .item-choose__favs, .item-choose__compare{
@@ -216,14 +238,14 @@
 }
 
 .to-compare-btn, .to-favs-btn{
-	margin-right: 5px;
+	margin-right: 8px;
 }
 
 .item-choose-text{
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: bold;
-	border-bottom: 1px dashed #000;
+	border-bottom: 1px dotted #000;
 }
 
 .item-info p{
@@ -236,6 +258,10 @@
 	padding-top: 0;
 }
 
+.item-info p:last-child{
+	padding-top: 8px;
+}
+
 .item-info a, .item-info strong{
 	color: #000;
 }
@@ -243,6 +269,10 @@
 .item-info a{
 	font-weight: bold;
 	border-bottom: 1px dashed #000;
+}
+
+.item-info-description{
+	line-height: 18px;
 }
 
 @media(max-width:1199px){
@@ -275,5 +305,13 @@
 @media(max-width:515px){
 	.item-about__title {
 	    width: 87%;
+	}
+
+	.item__stars-qnt {
+    	margin-left: 5px;
+	}
+
+	.item__review i {
+    	margin-right: 5px;
 	}
 }

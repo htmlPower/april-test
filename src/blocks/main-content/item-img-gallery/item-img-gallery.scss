@@ -3,14 +3,14 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .item-gallery{
-	width: 50%;
+	width: 55%;
 	display: flex;
 }
 
 .item-gallery__element--sm{
 	width: 82px;
 	height: 82px;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 	border: 2px solid #ededed;
 	position: relative;
 }
@@ -66,11 +66,12 @@
 }
 
 .gallery-img-lg{
-	margin-left: 20px;
+	margin-left: 28px;
 }
 
 .item-gallery__element--bg{
 	border: 3px solid #ededed;
+    max-height: 500px;
 	position: relative;
 }
 
